@@ -19,20 +19,21 @@ all the code would run on local machine, so it would use localhost.
    java -jar JmsMessageListenerConsumer.jar
 
 4. Results:
-   - When lauching broker, the broker is started as a server listening on port 61616.
-   The JMS Clients willing to connect to the broker will be using the TCP protocol (tcp://localhost:61616).
+   - When lauching broker, the broker is started as a server listening on port 61616.  
+   The JMS Clients willing to connect to the broker will be using the TCP protocol (tcp://localhost:61616).    
+   
    Log:
-   INFO | Listening for connections at: tcp://localhost:61616
-   INFO | Connector tcp://localhost:61616 started
+   INFO | Listening for connections at: tcp://localhost:61616  
+   INFO | Connector tcp://localhost:61616 started  
 
-   - When run producer side code, producer would generate five information in loop.
-   It sends message ‘END’ to indicate the client that it has sent the last message.
+   - When run producer side code, producer would generate five information in loop.  
+   It sends message ‘END’ to indicate the client that it has sent the last message.  
    Log:
-   Sending text: 'There is a new email notification for you '
-   Sending text: 'There is a new email notification for you '
-   Sending text: 'There is a new email notification for you '
-   Sending text: 'There is a new email notification for you '
-   Sending text: 'There is a new email notification for you '
+   Sending text: 'There is a new email notification for you '  
+   Sending text: 'There is a new email notification for you '  
+   Sending text: 'There is a new email notification for you '  
+   Sending text: 'There is a new email notification for you '  
+   Sending text: 'There is a new email notification for you '  
 
    - When run consumer side code, consumer would receive message asynchronously via Message Listener.
    Log:
