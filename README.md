@@ -18,7 +18,7 @@ all the code would run on local machine, so it would use localhost.
 3. Open the third console, run JmsMessageListenerConsumer
    java -jar JmsMessageListenerConsumer.jar
 
-4. Results:
+4. Results:  
    1） When lauching broker, the broker is started as a server listening on port 61616.  
    The JMS Clients willing to connect to the broker will be using the TCP protocol (tcp://localhost:61616).    
    Log:
