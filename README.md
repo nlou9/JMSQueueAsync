@@ -1,4 +1,3 @@
-# HW04-02
 ## 
 This program is to implement a simple JMS Queue which can be useful for the notification mailbox. It applies asynchronous
 message receive.
